@@ -1,0 +1,35 @@
+---
+cluster: "phoebev1"
+
+attributes:
+
+  num_hours:
+          label: Session duration
+          widget: select
+          options:
+                  - [ "8h", "8"]
+                  - [ "24h", "24"]
+                  - [ "1week", "168"]
+                  - [ "14 days", "336" ]
+          value: "24"
+
+  slot_cnt:
+    label: Instance size
+    help: select instance size
+    widget: select
+    options:
+      - [ "8 cores", "1" ]
+      - [ "32 cores", "4" ]
+      - [ "64 cores", "8" ]
+
+  partition:
+    label: CPU/GPU
+    widget: select
+    options:
+                - [ "CPU-only", "cpu_int" ]
+                - [ "GPU-accelerated", "gpu_int" ]
+
+form:
+  - num_hours
+  - slot_cnt
+  - partition

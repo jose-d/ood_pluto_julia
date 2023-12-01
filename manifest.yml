@@ -1,0 +1,9 @@
+---
+name: Julia
+category: Interactive Apps
+subcategory: Servers
+role: batch_connect
+description:
+  This app will launch Julia in Pluto.jl interface.
+  Be patient during first start as the recent version of Julia is installed into your workspace.
+icon: "icon.svg"
